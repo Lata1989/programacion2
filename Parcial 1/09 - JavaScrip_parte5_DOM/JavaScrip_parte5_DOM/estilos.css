@@ -1,0 +1,16 @@
+div {
+  border: 1px solid;
+  width: 80%;
+  height: 130px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.imagen{
+    height: 140px;
+
+}
+
+.imagen2{
+    background-color: red;
+}

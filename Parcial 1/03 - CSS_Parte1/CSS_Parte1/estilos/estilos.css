@@ -1,0 +1,96 @@
+/* Importar URL, puede ser externa o local */
+@import url();
+
+
+/* Importar fuentes  */
+/* Formal local */
+@font-face {
+    font-family: "Mystery Quest";
+    src: url("./fuentes/MysteryQuest-Regular.ttf");
+}
+
+/*--------------- Selectores------------------------ */
+
+/* Universal selecciona todos los elementos */
+* {
+    color: black;
+}
+
+/* Etiqueta */
+p {
+    color: red;
+    /* La fuentes que importamos localmente */
+    font-family: "Mystery Quest", cursive;
+}
+
+h1 {
+    /* Las fuentes que importamos por un enlace externo */
+    font-family: "PT Sans", sans-serif;
+    font-family: "Rubik Pixels", cursive;
+    font-size: 30px;
+}
+
+h3 {
+    color: red;
+}
+
+/* Si varias etiquetas tienen el mismo css es mejor agruparlas y separarlas por coma */
+p,
+h3 {
+    color: red;
+}
+
+/* por clase, se declara una clase en la etiqueta y se llama con un punto */
+.cssclase {
+    color: blue;
+}
+
+
+/* por id, se declara un id en la etiqueta se llama desde el css  con # */
+#cssid {
+    color: green;
+}
+
+/* Descendente, 
+cuando hay estiquetas dentro de otras podemos darle estilos solo los que cumplan cierta jerarquia, 
+los estilos seran aplicados en la ultima, se colocan secuancialmente separados por espacios  */
+span a {
+    color: coral;
+}
+
+div p a {
+    color: darkorchid;
+}
+
+
+/* Si son varios estilos descendentes se puedo poner un asterisco * que significa 
+todos los elementos entre esos dos */
+div * a {
+    color: darkorchid;
+}
+
+
+/* -------- Colores ------------------------ */
+
+/* Los colores que se usan con su palabra reservada son limitados */
+.palabrareservada {
+    color: blue;
+}
+
+/* Con RGB podemos crear una paleta de colores combinando colores por adicion de colores
+Con numeros enteros  (Rojo, Verde, Azul). Los valos van de 0 al 255 o porcentajes del 0  al 100 */
+.rgb {
+    color: rgb(136, 230, 29);
+    /*     color: rgb(10%, 55%, 100%); */
+}
+
+/* se puede dar transparencia con un cuarto parametro, los valores van del 0 al 1 en decimal */
+.rgbt {
+    color: rgba(116, 29, 230, 0.39);
+}
+
+/* En hexadecimal podemos crear los mismos colores que en RGB, con transparencia incluida.
+     Solo se usa un solo parametro o valor */
+.hexa {
+    color: #ad644198;
+}

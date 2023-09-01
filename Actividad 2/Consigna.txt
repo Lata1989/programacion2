@@ -1,0 +1,24 @@
+Actividad 2: CSS
+
+Entrega 28/04/2023:
+Adjuntarlo DESDE LA ACTIVIDAD al finalizar.
+Si lo realizan de a dos mencionarlo (al final del documento).
+Comprimir la/s pagina, si tiene recursos adicionales incluirlo.
+
+Tomando como referencia la Actividad 1:HTML generar dos nuevos proyectos para agregarles estilos con CSS.
+(Pueden utilizar otro texto/contenido )
+
+Proyecto CSS 1: Archivo Propio
+-Utilizar una hoja de estilo alojada en la misma carpeta del proyecto, enlazarla de forma local.
+-Utilizar al menos 4 selectores de etiquetas
+-Utilizar al menos 2 selectores de clase
+-Utilizar al menos 1 selector Descendente
+-Los estilos aplicados a dicho selectores es libre elección (fondos,colores, fuentes, tamaños,etc)
+
+Proyecto CSS 2: Boostrap
+-Usar una hoja de estilos con un enlace externo con Boostrap
+-Los elementos de la pagina deben ser responsivos con la grilla de Boostrap en dos resoluciones de pantalla distintas
+-Agregar un nav
+-Agregar un footer
+-Utilizar al menos una CARD`s.
+-Agregar un formulario de contacto (campo nombre, email, mensaje, un botón Enviar)

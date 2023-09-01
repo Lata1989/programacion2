@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./imagenes/icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/bootstrap.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+
+    <script defer src="./scripts/bootstrap.js"></script>
+    <script defer src="./scripts/script.js"></script>
+
+
+    <title>Temporiz.Ar</title>
+</head>
+
+<body>
+    <!-- Aca esta el header -->
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#"
+                    class="d-flex align-items-left mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="./imagenes/icono.jpg" alt="Logo Clim.Ar" class="logo">
+                    <span class="fs-1">Temporiz.Ar</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Aca esta el main -->
+    <main class="container-fluid">
+        <!-- Aca esta todo el contenido del main -->
+        <div class="row mb-3 text-center">
+            <div class="col-md-8 themed-grid-col">
+                <div class="row">
+                    <div class="col-auto themed-grid-col">
+                        <div class="row buscador">
+                            <h4 class="tituloDiv">Elija su ciudad:</h4>
+                            <select name="" id="ciudades" class="selectCiudades"></select>
+                            <button class="btn btn-primary rounded-pill px-3 d-flex boton" type="button" onclick="buscarCiudad()">Buscar</button>
+                            <button class="btn btn-secondary rounded-pill px-3 d-flex boton" type="button">Agregar ciudad</button>
+                        </div>
+                        <div class="row buscador">
+                            <h4>Su clima actual:</h4>
+                            <img src="" alt="" id="imagenClima" class="imagenClima">
+                            <label for="" id="condicion">Condicion: 
+                            </label>
+                            <label for="">Viento: 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col borde">
+                .col-md-4
+            </div>
+        </div>
+    </main>
+    <!-- Aca esta el footer -->
+    <div class="container-fluid">
+        <footer class="py-3 my-4 fixed-bottom border-top">
+            <p class="text-center text-body-secondary">© Pablo Alejandro de la Iglesia, Programación II Leibnitz 2023
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

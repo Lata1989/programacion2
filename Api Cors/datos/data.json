@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan",
+    "apellido": "García",
+    "edad": 32,
+    "ciudad": "Buenos Aires"
+  },
+  {
+    "id": 2,
+    "nombre": "María",
+    "apellido": "Sánchez",
+    "edad": 45,
+    "ciudad": "Córdoba"
+  },
+  {
+    "id": 3,
+    "nombre": "Pedro",
+    "apellido": "Martínez",
+    "edad": 27,
+    "ciudad": "Mendoza"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana",
+    "apellido": "González",
+    "edad": 53,
+    "ciudad": "Rosario"
+  },
+  {
+    "id": 5,
+    "nombre": "Pablo",
+    "apellido": "Hernández",
+    "edad": 19,
+    "ciudad": "La Plata"
+  },
+  {
+    "id": 6,
+    "nombre": "Luisa",
+    "apellido": "Pérez",
+    "edad": 62,
+    "ciudad": "San Miguel de Tucumán"
+  },
+  {
+    "id": 7,
+    "nombre": "Javier",
+    "apellido": "Jiménez",
+    "edad": 38,
+    "ciudad": "Salta"
+  },
+  {
+    "id": 8,
+    "nombre": "Carmen",
+    "apellido": "Ruiz",
+    "edad": 41,
+    "ciudad": "Santa Fe"
+  },
+  {
+    "id": 9,
+    "nombre": "Miguel",
+    "apellido": "López",
+    "edad": 24,
+    "ciudad": "Bahía Blanca"
+  },
+  {
+    "id": 10,
+    "nombre": "Lucía",
+    "apellido": "Fernández",
+    "edad": 31,
+    "ciudad": "Neuquén"
+  },
+  {
+    "id": 11,
+    "nombre": "Ricardo",
+    "apellido": "Díaz",
+    "edad": 57,
+    "ciudad": "Mar del Plata"
+  },
+  {
+    "id": 12,
+    "nombre": "Elena",
+    "apellido": "Castro",
+    "edad": 29,
+    "ciudad": "San Juan"
+  },
+  {
+    "id": 13,
+    "nombre": "Alejandro",
+    "apellido": "Santos",
+    "edad": 47,
+    "ciudad": "San Luis"
+  },
+  {
+    "id": 14,
+    "nombre": "Sara",
+    "apellido": "Moreno",
+    "edad": 35,
+    "ciudad": "Ushuaia"
+  },
+  {
+    "id": 15,
+    "nombre": "Antonio",
+    "apellido": "Gómez",
+    "edad": 50,
+    "ciudad": "Bariloche"
+  },
+  {
+    "id": 16,
+    "nombre": "Isabel",
+    "apellido": "Torres",
+    "edad": 23,
+    "ciudad": "Jujuy"
+  }
+]

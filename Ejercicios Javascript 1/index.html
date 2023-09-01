@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejerciciosEmilio.js"></script>
+    <title>Ejercicios Emilio</title>
+</head>
+
+<body>
+    <h1>Ejercicios</h1>
+
+    <h4>Ejercicio 1</h4>
+    <p>Solicitar al usuario dos valores. Luego Mostrar en pantalla la suma de esos valores.</p>
+    <label for="valor1">Ingrese el primer valor: </label>
+    <input type="number" id="valor1">
+    <label for="valor2">Ingrese el segundo valor: </label>
+    <input type="number" id="valor2">
+    <!-- <button onclick="ejercicio1()">Calcular</button> -->
+    <input type="submit" value="Calcular" onclick="ejercicio1()">
+    <label for="resultado">El resultado es: </label>
+    <p id="resultado1">Resultado</p>
+
+    <h4>Ejercicio 2</h4>
+    <p>Mostrar en pantalla la tabla del 9. Del 1 al 10.
+        ej:
+        1 x 9 = 9
+        2 x 9 = 18
+    </p>
+    <input type="submit" value="Calcular" onclick="ejercicio2()">
+
+    <h4>Ejercicio 3</h4>
+    <p>Solicitar al usuario un número. Luego mostrar en pantalla del 1 al número ingresado.
+    </p>
+    <label for="numeje3">Ingrese el numero: </label>
+    <input type="number" id="numeje3">
+    <input type="submit" value="Calcular modo bueno" onclick="ejercicio3b()">
+    <input type="submit" value="Calcular modo malo" onclick="ejercicio3m()">
+    <p id="resultado3">Resultados</p>
+
+    <h4>Ejercicio 4</h4>
+    <p>Solicitar al usuario un número del 1 al 100. Luego mostrar en pantalla del número ingresado
+        hasta el 100 de 10 en 10.
+        Si el número es mayor a 100 advertir al usuario.
+    </p>
+    <label for="numeje4">Ingrese el numero:</label>
+    <input type="number" id="numeje4" min="1" max="100">
+    <input type="submit" value="Mostrar" onclick="ejercicio4()">
+
+    <h4>Ejercicio 5</h4>
+    <p>Ingresar la calificación de 5 alumnos.
+        Mostrar en pantalla cuantos Desaprobaron (4 o menos), cuantos probaron(7-10)
+        ej: 3 Alumnos Aprobaron.
+        2 Alumnos Desaprobaron.
+    </p>
+    <input type="submit" value="Ingresar notas" onclick="ejercicio5()">
+    <label for="">Aprobados: </label>
+    <label for="" id="alumnosA">0</label>
+    <label for="">Desaprobados: </label>
+    <label for="" id="alumnosD">0</label>
+
+
+    <h4>Ejercicio 6</h4>
+    <p>Tres amigos quieren comprar cartulina. Esta cuesta 50 pesos.
+        Crear una solución donde se ingresan los aportes de cada uno.
+        Si el aporte del primero y/o el segundo ya es suficiente, no solicitar que se ingrese más
+        aportes.
+        Si al final con todos los aportes aún no es suficiente, advertir al usuario que el dinero es
+        insuficiente.
+        Si se completo o supero el valor de la cartulina Mostrar en pantalla que el dinero es
+        suficiente y el vuelto.</p>
+    <input type="submit" value="Ingresar aportes" onclick="ejercicio6()">
+    <label for="">Aporte amigo 1:</label>
+    <label for="" id="amigo1">0</label>
+    <label for="">Aporte amigo 2:</label>
+    <label for="" id="amigo2">0</label>
+    <label for="">Aporte amigo 3:</label>
+    <label for="" id="amigo3">0</label>
+    <label for="">Total recaudado:</label>
+    <label for="" id="totalr">0</label>
+    <label for="">Vuelto:</label>
+    <input type="text" id="vueltoAmigos" disabled>
+
+    <h4>Ejercicio 7</h4>
+    <p>En un establecimiento se controla la edad de los que ingresan para asignarles
+        salas distintas. El costo de ingreso es de 1200 pesos. Pero depende de la edad se realizan
+        descuentos.
+        Crear una solución en JS que permita controlar la información ingresada por cada persona y
+        mostrar a qué sala corresponde con su respectivo precio.
+        A los menores de 18 Años asignarle la sala 1 y pagan la mitad del precio.
+        A los mayores de 50 años asignarle la sala 3 y pagan un tercio del precio.
+        El resto se debe asignarle la sala 2 y pagan el costo de ingreso sin descuentos.
+        EJ: “Según su edad (17) se le asigna la sala 1 y el costo de la entrada es de 600
+        pesos”
+        ------ Sale ingresando edad menores o iguales a 0 y mayores a 150 ------
+    </p>
+    <label for="">Menores de 18:
+        <span id="menores18">0</span>
+    </label>
+    <label for="">Mayores de 50:
+        <span id="mayores50">0</span>
+    </label>
+    <label for="">Entrada general: 
+        <span id="e-general">0</span>
+    </label>
+    <label for="">Entradas totales vendidas:
+        <span id="entradas-totales">0</span>
+    </label>
+    <label for="">Recaudacion total: $
+        <span id="recaudacion-total">0</span>
+    </label>
+    <input type="button" value="Cargar entradas" onclick="ejercicio7()">
+
+    <h4>Ejecicio 8</h4>
+    <p>En una entidad educativa para que un alumno apruebe un examen, se necesita que
+        obtenga al menos un 4 que representa el 60% del examen bien realizado.
+        Dicho calculo se obtiene obteniendo el algoritmo en base 10 de esa calificación.
+        Por ejemplo para una nota de 4: log(4)=0.6020599913279624 que en porcentaje es el
+        60.21% del examen aprobado.
+        Su operación inversa es la potencia, cuya base es 10 y el exponente es el porcentaje en
+        decimal.
+        Por ejemplo, si un alumno obtuvo el 61% del examen, 61/100=0.61, la potencia quedaría
+        10^0.61 = 4. Su nota es 4.
+    </p>
+    <label for="">Ingrese el porcentaje de examen correcto del alumno:
+        <input type="number" min="0" max="100" id="nota-alumno">
+    </label>
+    <input type="button" value="Calcular nota 8A" onclick="ejercicio8()">
+    <label for="">El porcentaje <span id="nota-porcentaje">0</span>% corresponde a la nota <span id="nota-numero">0</span>.</label>
+    <input type="button" value="Calcular nota 8B" onclick="ejercico8b()">
+</body>
+
+</html>

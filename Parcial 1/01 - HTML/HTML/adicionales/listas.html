@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Listas</h1>
+    <h4>Ordenadas (Se numera automaticamente)</h4>
+    <ol><!-- Con esta etiqueta Para Listas Ordenadas -->
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+    </ol>
+    <hr>
+    <h4>Desordenadas </h4>
+    <ul><!-- Con esta etiqueta Para Listas Ordenadas -->
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+    </ul>
+    <hr>
+
+    <h4> Estilo de las listas ordenadas</h4>
+
+    <p>
+        Podemos modificar el indicador del orden en este tipo de listas mediante el atributo type. Así podemos conseguir
+        que el orden lo marquen los números (1, 2, 3,...); las letras mayúsculas o minúsculas (a, b, c, ...), (A, B, C,
+        ...); o los números romanos en mayusculas o en minúsculas (I, II; III; ...), (i, ii, iii, ...).
+
+        para ello utilizaremos el atributo type=" " con los siguientes valores:
+
+    </p>
+
+    <ul><!-- Con esta etiqueta Para Listas Ordenadas -->
+        <li>type="1": listas con números: (1, 2, 3, ...)
+        <li>type="a": listas con letras minúsculas: (a, b, c, ...)
+        <li>type="A": listas con letras mayúsculas: (A, B, C, ...)
+        <li>type="I": listas con números romanos en mayúsculas: (I, II, III, ...)
+        <li>type="i": listas con números romanos en minúsculas: (i, ii, iii, ...)
+    </ul>
+
+
+
+    <ol type="I"><!-- Con esta etiqueta Para Listas Ordenadas -->
+        <li>Item A</li>
+        <li>Item B</li>
+        <ol type="a">
+            <li>Item A</li>
+            <li>Item B</li>
+        </ol>
+        <li>Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+    </ol>
+
+<hr>
+    <h4> Cambiar inicio de la lista</h4>
+    <p>Modificar el principio de la lista
+
+        En ocasiones nos interesa que el número del principio de la lista no sea el uno (1), sino empezar por otro
+        número. Para ello usaremos el atributo start="num".</p>
+
+    <ol type="1" start="18">
+        <li>Zaragoza</li>
+        <li>Bilbao</li>
+        <li>Málaga</li>
+        <li>La Coruña</li>
+    </ol>
+
+
+
+</body>
+
+</html>

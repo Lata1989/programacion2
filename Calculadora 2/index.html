@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script defer src="/scripts/calculadora2.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora 2 Programacion</h1>
+    <div>
+        <div class="calculadora">
+            <div>
+                <input type="text" id="display" class="resultado" value="0" disabled>
+            </div>
+            <div>
+                <button class="botonNum" id="el-num7" onclick="agregarNumero(7)">7</button>
+                <button class="botonNum" id="el-num8" onclick="agregarNumero(8)">8</button>
+                <button class="botonNum" id="el-num9" onclick="agregarNumero(9)">9</button>
+                <button class="botonOpe" id="el-divi" onclick="dividir()">÷</button>
+                <button class="botonNum" id="el-num4" onclick="agregarNumero(4)">4</button>
+                <button class="botonNum" id="el-num5" onclick="agregarNumero(5)">5</button>
+                <button class="botonNum" id="el-num6" onclick="agregarNumero(6)">6</button>
+                <button class="botonOpe" id="el-multi" onclick="multiplicar()">x</button>
+                <button class="botonNum" id="el-num1" onclick="agregarNumero(1)">1</button>
+                <button class="botonNum" id="el-num2" onclick="agregarNumero(2)">2</button>
+                <button class="botonNum" id="el-num3" onclick="agregarNumero(3)">3</button>
+                <button class="botonOpe" id="el-resta" onclick="restar()">-</button>
+                <button class="botonNum" id="el-num0" onclick="agregarNumero(0)">0</button>
+                <button class="botonNum" id="el-puntito" onclick="puntito()">.</button>
+                <button class="botonRes" id="el-resul" onclick="calcular()">=</button>
+                <button class="botonOpe" id="el-suma" onclick="sumar()">+</button>
+                <button class="botonBorrar" onclick="borrarUltimo()">&larr;</button>
+                <button class="botonBorrar" id="el-borrar" onclick="borrar()">C</button>
+            </div>
+        </div>
+        <div class="historial">
+            <h2>Historial</h2>
+            <ul id="elHistorial" class="listaDes"> </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

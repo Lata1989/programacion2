@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta nativo de HTML-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- Meta de bootstrap aprovechando la arquitectura "mobile first"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial Bootstrap</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- Bootstrap link CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Bootstrap link JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NavBar de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Practica de Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Solicitar web</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Otros Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Hosting</a></li>
+                          <li><a class="dropdown-item" href="#">Aplicacion movil</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Consultenos</a></li>
+                        </ul>
+                      </li>
+              
+                    <!-- Dropdown por defecto de bootstrap -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- Deshabilito un boton que esta deshabilitado-->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Sistema de grilla de bootstrap -->
+    <div class="row mb-3 text-center">
+        <div class="col-md-8 themed-grid-col">
+            <!-- Formulario con bootstrap -->
+            <div class="formulario">
+                <form>
+                    <div class="mb-2">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombreInputText" placeholder="Ingrese su nombre...">
+                    </div>
+                    <div class="mb-2">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellidoInputText"
+                            placeholder="Ingrese su apellido...">
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="emailInputText" placeholder="Ingrese su email...">
+                    </div>
+                    <div class="mb-2">
+                        <label for="consulta" class="form-label">Su consulta:</label>
+                        <textarea name="consulta" class="form-control" cols="30" rows="5"
+                            placeholder="Ingrese los requisitos de su web..." required></textarea>
+                        <!-- <input type="email" class="form-control" id="emailInputText" placeholder="Ingrese su email..."> -->
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Condicion IVA:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condicion-iva" id="flexRadioDefault1"
+                                value="1" checked>
+                            <label class="form-check-label" for="condicion-iva">
+                                Responsable inscripto
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condicion-iva" id="flexRadioDefault2"
+                                value="2">
+                            <label class="form-check-label" for="condicion-iva">
+                                Monotributista
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condicion-iva" id="flexRadioDefault3"
+                                value="3">
+                            <label class="form-check-label" for="condicion-iva">
+                                Consumidor final
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <div class="mb-2">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div> -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" required>
+                        <label class="form-check-label" for="check1">Acepto los terminos y condiciones</label>
+                    </div>
+                    <div class="boton-enviar">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 themed-grid-col">
+            <!-- Card con bootstrap -->
+            <div class="card tarjeta" style="width: 18rem;">
+                <img src="imagenes/yo.jpeg" class="card-img-top imagenCard" alt="foto Pablo de la Iglesia">
+                <div class="card-body">
+                    <h5 class="card-title">Pablo de la Iglesia</h5>
+                    <p class="card-text">Estudiante del Instituto Leibnitz de la ciudad de Villa Maria, actualmente
+                        cursando el
+                        2do año de la carrera de Analista en sistemas de computacion.
+                    </p>
+                    <!-- Icono bootstrap -->
+                    <a href="https://www.facebook.com/profile.php?id=100088509376239" target="_blank">
+                        <button type="button" class="btn btn-secondary">
+                            <img src="iconosRS/facebook.svg" alt="Icono facebook">
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/rgbtechstore/" target="_blank">
+                        <button type="button" class="btn btn-secondary">
+                            <img src="iconosRS/instagram.svg" alt="Icono instagram">
+                        </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+5493534244199&text=Hola, necesito mas informacion!" target="_blank">
+                        <button type="button" class="btn btn-secondary">
+                            <img src="iconosRS/whatsapp.svg" alt="Icono whatsapp">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer con bootstrap -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark mifooter">
+        <div class="col-md-4 d-flex align-items-center">
+          <p class="mb-3 mb-md-0 letrafooter">© Sin copyright, Pablo Alejandro de la Iglesia Leibnitz 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

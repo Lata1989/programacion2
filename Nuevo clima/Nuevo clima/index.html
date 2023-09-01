@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Clima</title>
+    <link rel="shortcut icon" href="./imagenes/iconos/iconoClimas.png" type="image/x-icon">
+    <script src="./scripts/bootstrap.js"></script>
+    <script defer src="./scripts/cargarCiudades.js"></script>
+    <script defer src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./estilos/bootstrap.css">
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+
+<body>
+    <!-- Aca esta el header completo -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+            <img src="./imagenes/imagenes header/iconoClimas.png" alt="Logo Clima" class="img-fluid imagen-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">API Clima - Instituto Leibnitz - Programación II - Pablo de la
+                    Iglesia</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Aca esta el main -->
+    <main class="mt-5">
+        <div class="container m-auto">
+            <h1>Reporte de Clima</h1>
+            <div class="select-container text-center">
+                <label for="ciudades">Selecciona una ciudad:</label>
+                <select id="select-ciudades" onchange="cargarClima()">
+                </select>
+            </div>
+            <div class="reporte-clima text-start mt-4">
+                <label class="form-control sin-borde">Reporte de clima de <input type="text" class="sin-borde no-editable" id="ciudad-elegida" disabled></label>
+                <label class="form-control sin-borde">Temperatura: <input  id="temperatura-actual" type="text" class="sin-borde no-editable" disabled></label>
+                <label class="form-control sin-borde">Sensación térmica: <input  id="sensacion-termica-actual" type="text" class="sin-borde no-editable" disabled></label>
+                <label class="form-control sin-borde">Dirección del Viento: <input id="direccion-viento" type="text" class="sin-borde no-editable" disabled></label>
+                <label class="form-control sin-borde">Velocidad del Viento: <input id="velocidad-viento" type="text" class="sin-borde no-editable" disabled></label>
+                <label class="form-control sin-borde">Humedad: <input id="humedad-actual" type="text" class="sin-borde no-editable" disabled></label>
+                <label class="form-control sin-borde">Clima Actual: <input id="clima-actual" type="text" class="sin-borde no-editable" disabled></label>
+                <label class="form-control sin-borde">Condición climatica: <img id="imagen-clima" src="" alt="Imagen condicion clima actual" class="img-fluid imagen-header">
+                </label>
+            </div>
+            <!-- <div class="select-container text-center mt-5">
+                <label for="agregarCiudades" class="">Agregar una ciudad:</label>
+                <div class="text-center">
+                    <label for="">Ingrese el nombre de la ciudad: <input type="text">
+                    </label>
+                </div>
+                <button class="btn btn-primary mt-5 sel" onclick="agregarCiudad()">Agregar</button>
+            </div> -->
+        </div>
+    </main>
+    <!-- Este es el footer -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+        <div class="container-fluid text-center">
+            <span class="text-body-secondary text-center">Copyright© Todos los derechos reservados® Trabajo práctico:
+                Pablo Alejandro de la Iglesia - Instituto Leibnitz - Programación II - Emilio Amero</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Actividad 2</title>
+</head>
+<body>
+    <h1 class="titular">Tutorial CSS</h1>
+    <p>Formulario de registro web</p>
+    <form id="survey-form" action="" method="post">
+        <label for="name-label">Nombre: <input required type="text" name="name-label" id="name" placeholder="Ingrese su nombre completo"></label>
+        <label for="email-label">E-Mail: <input required name="email-label" id="email" type="email" placeholder="Ingrese su email"></label>
+        <label for="number-label">Telefono: <input required type="number" min="4500000" max="3536999999" name="number-label" placeholder="Ingrese su numero de telefono"></label>
+        <label for="nacimiento">Fecha de nacimiento: <input required type="date" name="nacimiento"></label>
+        <label for="desplegable">Como nos conoció?
+            <select name="desplegable" id="dropdown" required>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="recomendacion">Recomendación</option>
+                <option value="publicidad">Publicidad</option>
+                <option value="depaso">Pasaba por ahí</option>
+            </select>
+        </label>
+        <label for="comentario">Comentarios:
+            <textarea class="areaTexto" name="comentario" id="comment" cols="60" rows="4" resi></textarea>
+        </label>
+        <label for="terminosycondiciones"><input type="checkbox" name="terminosycondiciones" required> Acepto los terminos y condiciones previamente expuestos.</label>
+        <div class="boton">
+            <input type="submit" value="Registrarse"/>
+        </div>
+    </form>
+</body>
+</html>

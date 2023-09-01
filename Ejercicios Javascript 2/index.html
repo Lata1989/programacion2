@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/JavaScript_Logo.png" type="image/x-icon">
+    <script defer src="scripts.js"></script>
+    <title>Ejercicios Javascript 2</title>
+</head>
+
+<body>
+    <h4>Ejercicio 1</h4>
+    <p>Dado el siguiente string:
+        let mensaje = ‘Programacion 2’;
+        Imprimir en pantalla todos los caracteres uno debajo del otro.
+    </p>
+    <button onclick="ejercicio1()">Ejercicio 1</button>
+
+    <h4>Ejercicio 2</h4>
+    <p>
+        Dado el siguiente string:
+        let mensaje = ‘Programacion 2’;
+        Imprimir en pantalla todos los caracteres uno debajo del otro. Al encontrar un espacio dejar
+        de imprimir.
+    </p>
+    <button onclick="ejercicio2()">Ejercicio 2</button>
+
+    <h4>Ejercicio 3</h4>
+    <p>
+        Dado el siguiente string:
+        Imprimir en qué posición se encuentra la palabra ‘mundo’
+        let mensaje = 'Hola, mundo!';
+    </p>
+    <button onclick="ejercicio3()">Ejercicio 3</button>
+
+    <h4>Ejercicio 4</h4>
+    <p>
+        Se solicita una solución donde se imprimen en pantalla en mayúsculas las siguientes
+        palabras:
+        let animales = [
+        'perro',
+        'gato',
+        'elefante',
+        'jirafa',
+        'tigre',
+        'oso',
+        'conejo',
+        'león',
+        'cebra',
+        'mono'
+        ];
+
+    </p>
+    <button onclick="ejercicio4()">Ejercicio 4</button>
+
+    <h4>Ejercicio 5</h4>
+    <p>
+        Se solicita una solución donde se imprimen en pantalla las siguientes palabras agregando
+        un artículo delante de la palabra. Si la palabra termina en ‘a’ el articulo es LA sino EL.
+        ej:
+        El perro.
+        El elefante.
+        La jirafa
+        let animales = [
+        'perro',
+        'gato',
+        'elefante',
+        'jirafa',
+        'tigre',
+        'oso',
+        'conejo',
+        'león',
+        'cebra',
+        'mono'
+        ];
+    </p>
+    <button onclick="ejercicio5()">Ejercicio 5</button>
+
+    <h4>Ejercicio 6</h4>
+    <p>
+        Dado los siguientes string:
+        Utilizar 3 formas distintas para unirlos. Entre cada parte agregarle un punto.
+        let url1 = "https://www";
+        let url2 = "google";
+        let url3 = "com";
+    </p>
+    <button onclick="ejercicio6()">Ejercicio 6</button>
+
+    <h4>Ejercicio 7</h4>
+    <p>
+        Generar una solución donde se visualice la siguiente lista de compras. Solicitarle al usuario
+        que ingrese un artículo adicional. Si el artículo ya existe advertir y no agregar el artículo.
+        Luego Imprimir en pantalla toda la lista incluyendo el artículo agregado.
+        let listaDeCompras = ['manzanas', 'pan', 'leche', 'huevos', 'arroz', 'pollo', 'papas', 'zanahorias',
+        'cebollas', 'pasta'];
+    </p>
+    <button onclick="ejercicio7()">Ejercicio 7</button>
+
+    <h4>Ejercicio 8</h4>
+    <p>
+        Listar el siguiente array en pantalla y mostrar su respectiva posición.
+        Solicitarle al usuario que ingrese el número de posición, luego borrar del array dicho item y
+        volver a lista el array sin el dato eliminado.
+        Si el índice no existe informar al usuario.
+        let listaDeCompras = ['manzanas', 'pan', 'leche', 'huevos', 'arroz', 'pollo', 'papas', 'zanahorias',
+        'cebollas', 'pasta'];
+    </p>
+    <button onclick="ejercicio8()">Ejercicio 8</button>
+
+    <h4>Ejercicio 9</h4>
+    <p>
+        Listar el siguiente array en pantalla.
+        Solicitarle al usuario que ingrese la descripción, luego borrar del array dicho item y volver a
+        lista el array sin el dato eliminado.
+        Si la descripcion no existe informar al usuario.
+        let listaDeCompras = ['manzanas', 'pan', 'leche', 'huevos', 'arroz', 'pollo', 'papas',
+        'zanahorias', 'cebollas', 'pasta'];
+    </p>
+    <button onclick="ejercicio9()">Ejercicio 9</button>
+
+    <h4>Ejercicio 10</h4>
+    <p>
+        Unificar ejercicios 7,8 y 9 en una sola solucion.
+
+    </p>
+    <button onclick="ejercicio10()">Ejercicio 10</button>
+
+    <h4>Ejercicio 11</h4>
+    <p>
+        Listar las siguientes personas con su edad:
+        let personas = [
+        {nombre: 'Juan', edad: 25},
+        {nombre: 'María', edad: 30},
+        {nombre: 'Pedro', edad: 28},
+        {nombre: 'Ana', edad: 12},
+        {nombre: 'Sofía', edad: 15},
+        {nombre: 'Luis', edad: 27},
+        {nombre: 'Marta', edad: 31},
+        {nombre: 'Carlos', edad: 3},
+        {nombre: 'Lucía', edad: 17},
+        {nombre: 'Diego', edad: 16},
+        {nombre: 'Laura', edad: 24},
+        {nombre: 'José', edad: 40},
+        {nombre: 'Paula', edad: 37},
+        {nombre: 'Jorge', edad: 12},
+        {nombre: 'Valentina', edad: 23},
+        {nombre: 'Camila', edad: 101},
+        {nombre: 'Andrés', edad: 10},
+        {nombre: 'Isabel', edad: 7},
+        {nombre: 'Gustavo', edad: 17},
+        {nombre: 'Natalia', edad: 4}
+        ];
+        Luego solicitar al usuario un nombre y edad, agregarlo a la lista y mostrarlo.
+    </p>
+    <button onclick="ejercicio11()">Ejercicio 11</button>
+
+    <h4>Ejercicio 12</h4>
+    <p>
+
+        Con el array del ejercicio 11. Listar las personas clasificándolas por edad. Por una lado las
+        personas mayores de 18 años y por otro lado las menores. Una persona de 18 años ya es
+        mayor.
+        Adicionalmente agregar la cantidad de cada uno
+    </p>
+    <button onclick="ejercicio12()">Ejercicio 12</button>
+
+</body>
+
+</html>
