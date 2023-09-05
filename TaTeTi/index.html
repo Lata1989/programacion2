@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./styles/estilo.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <script defer src="./scripts/index.js"></script>
+</head>
+<body>
+    <h1 class="h1">Ta-Te-Ti</h1>
+
+    <div class="container border-1">
+        <p id="nombre-usuario">Usuario: <span id="usuario"></span></p>
+        <p id="nombre-rival">Rival: <span id="rival"></span></p>
+    </div>
+
+    <p id=valor-ficha> Estas jugando como: <span id="ficha"></span></p>
+    <p id="turno-de">Turno de X</p>
+
+    <div>
+        <p id="ingreso-nombre">Ingrese su nombre:</p>
+        <input type="text" placeholder="Ingrese su nombre." id="nombre" autocomplete="off">
+    </div>
+
+    <button id="buscar-rival" class="btn btn-primary m-1">Buscar rival</button>
+    <img src="./imagenes/loading-gif.gif" alt="Cargando imagen" id="loading" class="imagen-loading">
+
+    <div id="contenedor-grande">
+        <div id="contenedor">
+            <button id="btn1" class="btn"></button>
+            <button id="btn2" class="btn"></button>
+            <button id="btn3" class="btn"></button>
+            <button id="btn4" class="btn"></button>
+            <button id="btn5" class="btn"></button>
+            <button id="btn6" class="btn"></button>
+            <button id="btn7" class="btn"></button>
+            <button id="btn8" class="btn"></button>
+            <button id="btn9" class="btn"></button>
+
+        </div>
+    </div>
+</body>
+</html>
