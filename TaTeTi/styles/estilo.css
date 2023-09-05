@@ -20,5 +20,9 @@
 
 .imagen-loading {
     width: 10rem;
+}
 
+.contenedor {
+    border: 2px solid #343434;
+    width: 20rem;
 }
