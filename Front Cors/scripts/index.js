@@ -5,7 +5,7 @@ insertarDatos();
 /*
 Lista!
 */
-let cantidadDatos = 0;
+
 let firstLoad = true;
 
 function insertarDatos() {
@@ -29,7 +29,6 @@ function insertarDatos() {
             } else {
                 cuerpoTabla.removeChild();
             }
-
 
             for (let index = 0; index < datos.length; index++) {
                 //Creo la fila donde voy a poner los atributos
@@ -187,7 +186,7 @@ async function borrarCliente() {
 
 // Actualizar cliente
 /*
-    En proceso
+    En listo
 */
 async function actualizarCliente() {
     let numero = document.querySelector("#el-id").value;
