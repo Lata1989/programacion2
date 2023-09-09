@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 
 //Para Cors Mas especificos
+/*
 const corsOptions = {
   origin: "http://127.0.0.1:5500", // Esta es la ip del Live Server
   methods: "GET, POST, PUT, DELETE, PATCH", // Métodos HTTP permitidos
@@ -15,6 +16,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+*/
 /* Fin Cors */
 
 app.use(express.json());

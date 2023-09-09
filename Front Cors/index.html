@@ -13,6 +13,26 @@
 <body>
     <h1 class="text-center">CORS</h1>
     <div class="container-fluid">
+        <div class="row">
+            <label for="" class="form-control col">ID: <input type="number" id="el-id" disabled></label>
+            <label for="" class="form-control col">Nombre: <input type="text" id="el-nombre"></label>
+            <label for="" class="form-control col">Apellido: <input type="text" id="el-apellido"></label>
+            <label for="" class="form-control col">Edad: <input type="number" id="el-edad"></label>
+            <label for="" class="form-control col">Ciudad: <input type="text" id="el-ciudad"></label>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-4">
+                <button class="btn btn-block btn-primary" type="submit" onclick="agregarCliente()">Agregar</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-block btn-info" type="submit" onclick="actualizarCliente()">Modificar</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-block btn-danger" type="submit" onclick="borrarCliente()">Borrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
         <table class="table table dark" id="tabla">
             <thead class="thead-dark">
                 <tr>
