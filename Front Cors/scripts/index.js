@@ -6,73 +6,80 @@ insertarDatos();
 Lista!
 */
 let cantidadDatos = 0;
+let firstLoad = true;
 
 function insertarDatos() {
     fetch('http://127.0.0.10:3000/data')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json(); // Parse the response body as JSON
-    })
-    .then(datos => {
-        // Aquí puedes trabajar con los datos obtenidos
-        console.log(datos);
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json(); // Parse the response body as JSON
+        })
+        .then(datos => {
+            // Aquí puedes trabajar con los datos obtenidos
+            console.log(datos);
 
-        // Cargo todos los datos en pantalla
+            // Cargo todos los datos en pantalla
 
             // console.log(datos[3].nombre);
-    let cuerpoTabla = document.querySelector("#cuerpo-tabla");
+            let cuerpoTabla = document.querySelector("#cuerpo-tabla");
+            if (firstLoad) {
+                firstLoad = false;
+            } else {
+                cuerpoTabla.removeChild();
+            }
 
-    for (let index = 0; index < datos.length; index++) {
-        //Creo la fila donde voy a poner los atributos
-        const filaTabla = document.createElement("tr");
-        const elementoTabla1 = document.createElement("td");
-        const elementoTabla2 = document.createElement("td");
-        const elementoTabla3 = document.createElement("td");
-        const elementoTabla4 = document.createElement("td");
-        const elementoTabla5 = document.createElement("td");
-        const elementoTabla6 = document.createElement("td");
-        // ID
-        const id = datos[index].id;
-        cantidadDatos = id;
-        elementoTabla1.textContent = id;
-        // nombre
-        const nombre = datos[index].nombre;
-        elementoTabla2.textContent = nombre;
-        //apellido
-        const apellido = datos[index].apellido;
-        elementoTabla3.textContent = apellido;
-        //edad        
-        const edad = datos[index].edad;
-        elementoTabla4.textContent = edad;
-        //ciudad
-        const ciudad = datos[index].ciudad;
-        elementoTabla5.textContent = ciudad;
-        // Boton
-        let elementoButton = document.createElement("button");
-        elementoButton.textContent = "Consultar";
-        elementoButton.class = "btn btn-primary";
-        elementoButton.type = "button";
-        // elementoButton[index].addEventListener("onclick",consultar(id));
-        elementoButton.addEventListener("click", function () {
-            consultar(id);
+
+            for (let index = 0; index < datos.length; index++) {
+                //Creo la fila donde voy a poner los atributos
+                const filaTabla = document.createElement("tr");
+                const elementoTabla1 = document.createElement("td");
+                const elementoTabla2 = document.createElement("td");
+                const elementoTabla3 = document.createElement("td");
+                const elementoTabla4 = document.createElement("td");
+                const elementoTabla5 = document.createElement("td");
+                const elementoTabla6 = document.createElement("td");
+                // ID
+                const id = datos[index].id;
+                cantidadDatos = id;
+                elementoTabla1.textContent = id;
+                // nombre
+                const nombre = datos[index].nombre;
+                elementoTabla2.textContent = nombre;
+                //apellido
+                const apellido = datos[index].apellido;
+                elementoTabla3.textContent = apellido;
+                //edad        
+                const edad = datos[index].edad;
+                elementoTabla4.textContent = edad;
+                //ciudad
+                const ciudad = datos[index].ciudad;
+                elementoTabla5.textContent = ciudad;
+                // Boton
+                let elementoButton = document.createElement("button");
+                elementoButton.textContent = "Consultar";
+                elementoButton.class = "btn btn-primary";
+                elementoButton.type = "button";
+                // elementoButton[index].addEventListener("onclick",consultar(id));
+                elementoButton.addEventListener("click", function () {
+                    consultar(id);
+                });
+                elementoTabla6.appendChild(elementoButton);
+                filaTabla.appendChild(elementoTabla1);
+                filaTabla.appendChild(elementoTabla2);
+                filaTabla.appendChild(elementoTabla3);
+                filaTabla.appendChild(elementoTabla4);
+                filaTabla.appendChild(elementoTabla5);
+                filaTabla.appendChild(elementoTabla6);
+                cuerpoTabla.appendChild(filaTabla);
+
+                // Actualizo la cantidad de datos
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
         });
-        elementoTabla6.appendChild(elementoButton);
-        filaTabla.appendChild(elementoTabla1);
-        filaTabla.appendChild(elementoTabla2);
-        filaTabla.appendChild(elementoTabla3);
-        filaTabla.appendChild(elementoTabla4);
-        filaTabla.appendChild(elementoTabla5);
-        filaTabla.appendChild(elementoTabla6);
-        cuerpoTabla.appendChild(filaTabla);
-
-        // Actualizo la cantidad de datos
-    }
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
 
 }
 
@@ -106,8 +113,8 @@ function consultar(numero) {
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
         });
-    
-        insertarDatos()
+
+    insertarDatos()
 
 }
 
@@ -151,7 +158,7 @@ async function agregarCliente() {
         .catch(error => {
             console.error("Error:", error);
         });
-        insertarDatos()
+    insertarDatos()
 }
 
 // Borrar cliente
@@ -174,7 +181,7 @@ async function borrarCliente() {
         .catch(error => {
             console.error("Error:", error);
         });
-        insertarDatos()
+    insertarDatos()
 }
 
 
@@ -223,5 +230,5 @@ async function actualizarCliente() {
             // Maneja el error de acuerdo a tus necesidades
         });
 
-        insertarDatos()
+    insertarDatos()
 }
