@@ -1,0 +1,84 @@
+body {
+    display: flex;
+}
+
+.game-container {
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.border-left {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: +1;
+}
+
+.border-right {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: +2;
+    left: 580px;
+}
+
+.border-top {
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: +2;
+    top: -50px;
+}
+
+.sky {
+    /* Una vez que tengo el cielo como quiero importo la imagen */
+    /* background-color: #6bd9fd; */
+    background-image: url("../imagenes/fb-game-background.png");
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.ground {
+    /* Una vez que tengo el piso como quiero importo la imagen */
+    /* background-color: #a52a2a; */
+    background-image: url(../imagenes/bottom-background.png);
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+}
+
+.bird {
+    /* Una vez que tengo el pajaro como quiero importo la imagen */
+    /* background-color: #ffff00; */
+    background-image: url("../imagenes/flappy-bird.png");
+    position: absolute;
+    width: 60px;
+    height: 45px;
+}
+
+.obstacle {
+    /* Una vez que tengo el obstaculo como quiero importo la imagen */
+    /* background-color: #008000; */
+    background-image: url("../imagenes/flappybird-pipe.png");
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.topObstacle {
+        /* Una vez que tengo el obstaculo como quiero importo la imagen */
+        /* background-color: #008000; */
+        background-image: url("../imagenes/flappybird-pipe.png");
+        width: 60px;
+        height: 300px;
+        position: absolute;
+        transform: rotate(180deg);
+}
